@@ -1,0 +1,355 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display:flex;
+    
+ 
+
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 25px;
+    
+}
+
+.intro{
+    text-align: center;
+    margin-left: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 200;
+    text-shadow: #333;
+}
+
+.intro p{
+    color: #333;
+}
+
+nav {
+    background: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+#Home {
+    background-color: #575757;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #4CAF50;
+}
+
+.hero p{
+    color:#f4f4f4;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #575757;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.categories {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    padding: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+
+    border-radius: 25px;
+}
+
+.goods {
+    border: 5px solid black;
+    border-radius: 25px;
+    background-origin: padding-box;
+    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    color: #ddd;
+    padding: 30px;
+    height: 500px;
+    width: 900px;
+    margin-top: 0%;
+
+}
+
+.box {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.tite {
+    color: #ddd;
+    width: 900px;
+    height: 50px;
+    display: block;
+    position: relative;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 25px;
+    margin-bottom: 15px;
+
+}
+
+.tite h2 {
+    margin-top: 0%;
+    font-weight: 25px;
+
+}
+
+#fruits {
+    border-radius: 25px;
+}
+
+.product {
+    border: 3px solid #ddd;
+    margin: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    flex-wrap: wrap;
+    background-color: white;
+
+
+}
+
+.product img {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.categories p {
+    color: #555;
+}
+
+.categories button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.categories button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: 5px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+}
+
+.pos-bar {
+    position: relative;
+    position: sticky;
+    top: 80px;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: 480px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+.pos-bar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#total-amount {
+    font-size: 24px;
+}
+
+.pos-bar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pos-bar li {
+    margin-bottom: 10px;
+}
+
+.pos-bar button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+    position: sticky;
+}
+
+.pos-bar button:hover {
+    background-color: #45a049;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.carousel-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-buttons button:hover {
+    background-color: #45a049;
+}
